@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#ffffff;
+font-family:Arial,sans-serif;
+
+}
+
+.certificate{
+
+width:1123px;
+height:794px;
+position:relative;
+background:white;
+overflow:hidden;
+
+}
+
+.top-green{
+
+position:absolute;
+top:0;
+left:0;
+width:420px;
+height:70px;
+background:#b6ff00;
+
+}
+
+.top-black{
+
+position:absolute;
+right:0;
+top:0;
+width:620px;
+height:90px;
+background:black;
+clip-path:polygon(10% 0%,100% 0%,90% 100%,0% 100%);
+
+}
+
+.logo{
+
+position:absolute;
+top:18px;
+right:160px;
+font-size:54px;
+font-weight:bold;
+color:white;
+
+}
+
+.logo span{
+
+color:#b6ff00;
+
+}
+
+.title{
+
+position:absolute;
+top:130px;
+width:100%;
+text-align:center;
+font-size:74px;
+letter-spacing:12px;
+color:#0d7f3d;
+font-family:Georgia,serif;
+
+}
+
+.subtitle{
+
+position:absolute;
+top:225px;
+width:100%;
+text-align:center;
+font-size:22px;
+letter-spacing:6px;
+color:#3b8f5c;
+
+}
+
+.awarded{
+
+position:absolute;
+top:290px;
+width:100%;
+text-align:center;
+font-size:22px;
+
+}
+
+.name{
+
+position:absolute;
+top:340px;
+width:100%;
+text-align:center;
+font-size:56px;
+font-weight:bold;
+
+}
+
+.line{
+
+position:absolute;
+top:430px;
+left:220px;
+width:680px;
+height:2px;
+background:#2ca24d;
+
+}
+
+.description{
+
+position:absolute;
+top:470px;
+left:120px;
+width:880px;
+font-size:22px;
+line-height:40px;
+text-align:center;
+
+}
+
+.footer{
+
+position:absolute;
+bottom:45px;
+width:100%;
+display:flex;
+justify-content:space-around;
+align-items:center;
+
+}
+
+.sign{
+
+text-align:center;
+font-weight:bold;
+
+}
+
+.qr-code{
+position:absolute;
+right:40px;
+bottom:0px;
+}
+
+.bottom-green{
+
+position:absolute;
+right:0;
+bottom:0;
+width:400px;
+height:70px;
+background:#b6ff00;
+clip-path:polygon(25% 0%,100% 0%,100% 100%,0% 100%);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="certificate">
+
+<div class="top-green"></div>
+
+<div class="top-black"></div>
+
+<div class="logo">
+DC<span>O</span>DE
+</div>
+
+<div class="title">
+CERTIFICATE
+</div>
+
+<div class="subtitle">
+OF ACHIEVEMENT
+</div>
+
+<div class="awarded">
+This certificate is awarded to
+</div>
+
+<div class="name">
+{{NAME}}
+</div>
+
+<div style="position:absolute; top:405px; width:100%; text-align:center; font-size:18px; color:#666;">
+Reg No: {{REGISTER_NUMBER}}
+</div>
+
+<div class="line"></div>
+
+<div class="description">
+
+{{DESCRIPTION}}
+
+</div>
+
+<div class="footer">
+
+<div style="text-align: left; font-size: 14px; color: #666;">
+  ID: {{CERTIFICATE_ID}}<br>
+  Issued: {{ISSUE_DATE}}
+</div>
+
+<div>Kerala Startup Mission</div>
+
+<div>Startup India</div>
+
+<div class="sign">
+CEO
+</div>
+
+<div class="sign">
+CMD
+</div>
+
+<div class="qr-code">
+  <img src="{{QR_CODE}}" alt="QR Code" width="80">
+</div>
+
+</div>
+
+<div class="bottom-green"></div>
+
+</div>
+
+</body>
+</html>
